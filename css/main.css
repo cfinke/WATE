@@ -1,0 +1,177 @@
+body {
+	font-family: arial;
+	padding: 0;
+	margin: 0;
+}
+
+#files {
+	float: left;
+	height: 80%;
+	width: 18%;
+}
+
+#files #listing {
+	font-family: arial;
+	font-size: 9pt;
+	height: 95%;
+	overflow: auto;
+	border-width: 0px 1px 1px 1px;
+	border-color: #000000;
+	border-style: solid;
+	padding: 3px;
+	width: 95%;
+	cursor: pointer;	
+}
+
+#files #toolbar {
+	text-align: right;
+	width: 95%;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	border-style: solid;
+	padding: 3px 3px 3px 3px;
+
+}	
+
+#editor {
+	float: right;
+	width: 80%;
+	height: 80%;
+	padding: 3px;
+}
+
+#documents {
+	float: right;
+	width: 95%;
+	height: 100%;
+}
+
+.docContent {
+	padding: 3px;
+	width: 100%;
+	height: 100%;
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+#lineNumbers {
+	float: left;
+	text-align: right;
+	overflow: hidden;
+	height: 100%;
+	padding-top: 5px;
+	width: 4ex;
+	height: 100%;
+}
+
+.docLineNumbers {
+	width: 100%;
+	height: 100%;
+	font-family: monospace;
+	height: 100%;
+	font-size: 10pt;
+	overflow: hidden;
+	line-height: 1.2em;
+}
+
+#statusArea {
+	text-align: center;
+	height: 3ex;
+	font-weight: bold;
+	font-size: 10pt;
+	letter-spacing: -0.5;
+	background-color: #698FB3;
+	color: #FFFFFF;
+	padding: 2px;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #000000;
+	vertical-align: middle;
+}
+
+#menuBar {
+	height: 3ex;
+	font-size: 10pt;
+	letter-spacing: -0.5;
+	background-color: #DDDDDD;
+	color: #000000;
+	padding: 2px;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+#main {
+	padding: 5px;
+}
+
+.dirLink {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.dirLink:hover {
+	background-color: #0000AA;
+}
+
+.closeButton {
+	text-align: right;
+	cursor: pointer;
+}
+
+.dialog {
+	position: absolute;
+	top: 200;
+	left: 200;
+	z-index: 100;
+	background-color: #DDDDDD;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+.dialog td {
+	font-size: 10pt;
+}
+
+.dialog thead td {
+	border-width: 0px 0px 1px 0px;
+	border-color: #000000;
+	border-style: solid;
+	padding: 3px;
+}
+
+.dialog thead td, #statusArea {
+	background-color: #698FB3;
+	font-weight: bold;
+	font-size: 10pt;
+	letter-spacing: -0.5;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+
+#dirContextMenu {
+	position: absolute;
+	z-index: 200;
+	border: 1px solid #000000;
+	background-color: #dddddd;
+	width: 15ex;
+}
+
+#dirContextMenu a {
+	display: block;
+	cursor: pointer;
+	padding: 2px 4px 2px 4px;
+	font-size: 9pt;
+	color: #000000;
+	font-weight: bold;
+}
+
+#dirContextMenu a:hover {
+	background-color: #698FB3;
+	color: #ffffff;
+}
+
+#viewFilesCheck {
+	width: 3ex;
+}

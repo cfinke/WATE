@@ -1,0 +1,129 @@
+#menu {
+	position: absolute;
+	top: 1.8em;
+	left: 5px;
+	z-index: 100;
+}
+
+#menu h2 {
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: arial, helvetica, sans-serif;
+	display: block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 1px 0 1px 3px;
+	z-index: 100;
+}
+
+#menu a {
+	font-weight: normal;
+	font-size: 9pt;
+	font-family: arial, helvetica, sans-serif;
+	display: block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 1px 0 1px 3px;
+	z-index: 100;
+}
+
+#menu h2 {
+	z-index: 100;
+}
+
+#menu a {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1px 0px 3px 3px;
+	z-index: 100;
+}
+
+#menu a, #menu a:visited{
+	color: #000000;
+}
+
+#menu a:hover{
+	color: #ffffff;
+	background-color:#006699;
+}
+
+#menu a:active{
+}
+
+#menu ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	width: auto;
+}
+
+#menu li{
+position:relative;
+padding-right: 20px;
+}
+
+#menu ul ul{
+	position:absolute;
+	z-index:500;
+	top:auto;
+	display:none;
+	padding:5px;
+	border: thin black solid;
+	background-color: #eeeeee;
+	width: auto;
+}
+
+#menu ul ul ul{
+	top:0;
+	left:100%;
+}
+
+/* Begin non-anchor hover selectors */
+
+/* Enter the more specific element (div) selector
+on non-anchor hovers for IE5.x to comply with the
+older version of csshover.htc - V1.21.041022. It
+improves IE's performance speed to use the older
+file and this method */
+
+div#menu h2:hover{
+
+}
+
+div#menu li:hover{
+z-index:100;
+}
+
+div#menu li:hover ul ul,
+div#menu li li:hover ul ul,
+div#menu li li li:hover ul ul,
+div#menu li li li li:hover ul ul
+{display:none;}
+
+div#menu li:hover ul,
+div#menu li li:hover ul,
+div#menu li li li:hover ul,
+div#menu li li li li:hover ul
+{display:block;}
+
+/* End of non-anchor hover selectors */
+
+/* Styling for Expand */
+
+#menu a.x, #menu a.x:visited{
+font-weight:bold;
+color:#000;
+
+}
+
+#menu a.x:hover{
+color:#a00;
+
+}
+
+#menu a.x:active{
+color:#060;
+
+}
